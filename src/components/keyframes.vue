@@ -11,17 +11,15 @@
 <script>
 export default {
   data() {
-      return;{
-          
-      }
+      return{}
   },
   mounted() {},
   methods: {
     goTest() {
-      this.$router.push({ path: "/Test" });
+      this.$router.push({path: "/Test"});
     },
     goHelloWorld() {
-      this.$router.push({ path: "/HelloWorld" });
+      this.$router.push({path: "/HelloWorld"});
     }
   }
 };
