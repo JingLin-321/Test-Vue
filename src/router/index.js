@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Test from '@/components/Test'
 import keyframes from '@/components/keyframes'
+import Flex from '@/components/Flex'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/',
       name: 'keyframes',
       component: keyframes
+    },
+    {
+      path: '/Flex',
+      name: 'Flex',
+      component: Flex
     }
   ]
 })

@@ -4,6 +4,7 @@
     <div>
       <button @click="goTest">Test</button>
       <button @click="goHelloWorld">HelloWorld</button>
+      <button @click="goFlex">Flex</button>
     </div>
   </div>
 </template>
@@ -20,6 +21,9 @@ export default {
     },
     goHelloWorld() {
       this.$router.push({path: "/HelloWorld"});
+    },
+    goFlex() {
+      this.$router.push({path: "/Flex"});
     }
   }
 };
