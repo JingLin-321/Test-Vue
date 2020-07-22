@@ -1,5 +1,8 @@
 <template>
   <div class="stage">
+    <div>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>
+    </div>
     <div class="box bounce-1"></div>
     <div>
       <button @click="goTest">Test</button>
@@ -8,22 +11,31 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {
-      return{}
+    return {};
   },
-  mounted() {},
+  mounted() {
+    this.drowCanvas();
+  },
   methods: {
     goTest() {
-      this.$router.push({path: "/Test"});
+      this.$router.push({ path: "/Test" });
     },
     goHelloWorld() {
-      this.$router.push({path: "/HelloWorld"});
+      this.$router.push({ path: "/HelloWorld" });
     },
     goFlex() {
-      this.$router.push({path: "/Flex"});
+      this.$router.push({ path: "/Flex" });
+    },
+    drowCanvas() {
+      var c = document.getElementById("myCanvas");
+      var cxt = c.getContext("2d");
+      cxt.moveTo(10, 10);
+      cxt.lineTo(150, 50);
+      cxt.lineTo(10, 50);
+      cxt.stroke();
     }
   }
 };
