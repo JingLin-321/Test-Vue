@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Test from '@/components/Test'
 import keyframes from '@/components/keyframes'
 import Flex from '@/components/Flex'
+import Sign from '@/components/Signature'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/Flex',
       name: 'Flex',
       component: Flex
+    },
+    {
+      path: '/Sign',
+      name: 'Sign',
+      component: Sign
     }
   ]
 })
