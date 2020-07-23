@@ -30,13 +30,10 @@ export default {
       this.$router.push({ path: "/HelloWorld" });
     },
     goFlex() {
-<<<<<<< HEAD
-      this.$router.push({path: "/Flex"});
+      this.$router.push({ path: "/Flex" });
     },
     goSign() {
-      this.$router.push({path: "/Sign"});
-=======
-      this.$router.push({ path: "/Flex" });
+      this.$router.push({ path: "/Sign" });
     },
     drowCanvas() {
       var c = document.getElementById("myCanvas");
@@ -45,7 +42,6 @@ export default {
       cxt.lineTo(150, 50);
       cxt.lineTo(10, 50);
       cxt.stroke();
->>>>>>> 6b1fe700f526cf1fa4deb579068ecf4ad82f3e42
     }
   }
 };
